@@ -46,7 +46,7 @@ pipeline {
             steps {
                 sh '''
                     npm install -g serve
-                    learn-jenkins-app\node_modules\.bin\serve -s build
+                    learn-jenkins-app\node_modules\bin\serve -s build
                     npx playwright test
                 '''
             }
